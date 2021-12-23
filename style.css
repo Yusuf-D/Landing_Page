@@ -13,27 +13,39 @@ ul {
 button {
     background-color: #CEE5D0;
     color: #87AAAA;
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 10px;
     border-color: #87AAAA;
 }
+button:hover {
+    background-color: azure;
+    color: #87AAAA;
+    border-color: azure;
+}
 a {
     text-decoration: none;
-    color: white;
+    color: azure;
     font-size: larger;
 }
+a:hover {
+    color: #87AAAA;
+}
+span {
+    font-weight: 700;
+    font-size: 24px;
+}
 .nav, .header, .pictures, .quote, .footer {
-    padding: 20px 200px 50px;
+    padding: 30px 200px 30px;
     margin: 0;
 }
 .nav {
     display: flex;
     background-color: #FFBF86;
-    color: white;
+    color: azure;
 }
 .header {
     background-color: #FFBF86;
-    color: white;
+    color: azure;
     display: flex;
     align-items: stretch;
     gap: 40px;
@@ -42,18 +54,19 @@ a {
 .header img {
     width: 24rem;
 }
-.top {
-    margin: 50px;
+.header h1 {
+    font-size: 48px;
 }
 .pictures img {
     width: 10rem;
     border: 3px solid #FFBF86;
     border-radius: 20px;
 }
-.bottom {
+.body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 .pictures {
     text-align: center;
@@ -79,4 +92,26 @@ a {
 }
 .bottom {
     background-color: #F3F0D7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 200px;
+}
+.inner {
+    background-color: #F19292;
+    color: azure;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+.footer {
+    text-align: center;
+    color:azure;
+    background-color: #FFBF86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
